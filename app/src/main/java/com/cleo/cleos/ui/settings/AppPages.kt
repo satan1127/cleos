@@ -83,8 +83,8 @@ internal fun ChatPage(vm: SettingsViewModel) {
         Slider(
             value = vm.historySize.toFloat(),
             onValueChange = { vm.historySize = (it / 10f).roundToInt() * 10 },
-            valueRange = 10f..200f,
-            steps = 18,
+            valueRange = 10f..1000f,
+            steps = 98,
         )
         Text(
             "更早的，TA 会自己整理成前情提要带着，不会一下子忘掉；在聊天里往上翻，能看到分界的那一行，点开能看、能改。原样带得越多，细节记得越清楚，每次花的 token 也越多。",
